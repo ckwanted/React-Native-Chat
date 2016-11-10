@@ -9,7 +9,7 @@ class Chat extends Component {
   render() {
     return (
       <View>
-        <Text>hello Chat</Text>
+        <Text>hello {this.props.name}</Text>
       </View>
     );
   }
