@@ -60,8 +60,6 @@ const styles = StyleSheet.create({
   nameInput: {
     height: 40,
     margin: 20,
-    borderWidth: 1,
-    paddingLeft: 10
   },
   btnText: {
     backgroundColor: '#DDD',
