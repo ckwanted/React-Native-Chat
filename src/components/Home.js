@@ -37,7 +37,7 @@ class Home extends Component {
           if(this.state.name.trim().length) {
             Actions.chat({
               name: this.state.name
-            });  
+            });
           }
         }}
       >
@@ -59,10 +59,16 @@ const styles = StyleSheet.create({
   },
   nameInput: {
     height: 40,
-    margin: 20
+    margin: 20,
+    borderWidth: 1,
+    paddingLeft: 10
   },
   btnText: {
+    backgroundColor: '#DDD',
+    textAlign: 'center',
+    padding: 5,
     marginLeft: 20,
+    marginRight: 20,
     fontSize: 20
   }
 });
