@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 
 import {
   StyleSheet,
@@ -12,9 +12,7 @@ import {
 
 import { Home, Chat } from './components';
 
-export default class App extends Component {
-
-  render() {
+const App = () => {
     return (
       <Router>
         <Scene key="root" style={styles.headerBar}>
@@ -23,8 +21,6 @@ export default class App extends Component {
         </Scene>
       </Router>
     );
-  }
-
 }
 
 const styles = StyleSheet.create({
@@ -32,3 +28,5 @@ const styles = StyleSheet.create({
     paddingTop: Platform.OS === 'ios' ? 64 : 54
   }
 });
+
+export default App;

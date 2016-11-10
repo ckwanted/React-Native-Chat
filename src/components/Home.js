@@ -34,12 +34,16 @@ class Home extends Component {
         />
       <TouchableOpacity
         onPress={() => {
-          Actions.chat({
-            name: this.state.name
-          });
+          if(this.state.name.trim().length) {
+            Actions.chat({
+              name: this.state.name
+            });  
+          }
         }}
       >
-        <Text style={styles.btnText}>Next</Text>
+        <Text style={styles.btnText}>
+          Enter
+        </Text>
       </TouchableOpacity>
       </View>
     );
